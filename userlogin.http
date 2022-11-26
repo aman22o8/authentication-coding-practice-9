@@ -1,0 +1,34 @@
+//gettinh all existinh user
+GET  http://localhost:3004/user/
+
+###
+POST http://localhost:3004/register
+Content-Type: application/json
+
+{
+  "username": "adam_rich",
+  "name": "Adam Richardaa",
+  "password": "richard_5678",
+  "gender": "male",
+  "location": "Detroitoo"
+}
+
+
+###
+POST  http://localhost:3004/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+###
+
+PUT http://localhost:3004/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
